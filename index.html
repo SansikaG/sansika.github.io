@@ -1,35 +1,73 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <style>
-    body {background-color: rgb(214, 150, 195);}
-    h2   {color: rgb(255, 0, 0);}
-    p    {color: rgb(0, 33, 219);}
-    
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .photo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+        
+        .photo-container img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+        }
+        
+        .content {
+            margin-right: 160px; /* Pour éviter que le texte soit caché par l'image */
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
     </style>
-    
 </head>
 <body>
-    <p><strong>Nom :</strong> Gnanapragasam</p>
-    <p><strong>Prénom :</strong> Sansika</p>
-    <p><strong>Linkedin :</strong></p>
-    <hr> <!-- Trait de séparation -->
+    <div class="photo-container">
+        <img src="chaima.jpeq" alt="photo de Chaima">
+    </div>
     
-    <h2><u>Compétences :</u></h2><ul>
-        <li>Langage HTML</li>
-        </h3><li>Upgrade un pc</li></h3>
-        </h3><li>Dessin</li></h3>
-    </ul>
-    <h2><u>Formations :</u></h2>
-    <p><mark>BTS SIO</mark> au <i>lycée Turgot.</i></p>
-    <img src="https://mediadreams.fr/wp-content/uploads/2025/02/unnamed-scaled.jpg" alt="Image" style="position: absolute; top: 0; right: 0;">
-    
-    <a href="https://pia.ac-paris.fr/serail/jcms/s2_271354/fr/accueil"><div style>Aller vers le site du lycée Turgot</a>
-    
+    <div class="content">
+        <p><strong>Nom:</strong>Gnanapragasam</p>
+        <p><strong>Prenom: </strong>Sansika </p>
+        
+        <h1>Compétences</h1>
+        <p>Ajoutez ici vos compétences...</p>
+        
+        <h1>Formation</h1>
+        <p>Ajoutez ici votre formation...</p>
+    </div>
+    <div>
+    <a href="/contact.html">page de contact</a>
+    </div>
 </body>
 </html>
+
 
 
 
