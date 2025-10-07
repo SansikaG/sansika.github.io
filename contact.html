@@ -11,9 +11,21 @@
     i    {color: rgb(0, 0, 0);}
     </style>
 </head>
-<body>
-    <h1><u>Formulaire de Contact</u></h1>
-<p>Numéro de téléphone :<i> 0764293287</i></p>
-          <p>Gmail :<i> sansika2007@gmail.com</i></p>
-        <p>Linkedin :<i></i></p>
-        <p>Adresse:<i></i></p>
+<form action="/ma-page-de-traitement" method="post">
+  <ul>
+    <li>
+      <label for="name">Nom&nbsp;:</label>
+      <input type="text" id="name" name="user_name" />
+    </li>
+    <li>
+      <label for="mail">E-mail&nbsp;:</label>
+      <input type="email" id="mail" name="user_email" />
+    </li>
+    <li>
+      <label for="msg">Message&nbsp;:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </li>
+
+    …
+  </ul>
+</form>
